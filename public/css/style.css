@@ -1,0 +1,19 @@
+.sampul{
+    width: 130px;
+ 
+}
+.table{
+    
+    width: 80%;
+
+}
+.row{
+    margin: 3% -22% 0 2%;
+}
+.cover{
+    width: 20%;
+    height: 100%;
+}
+th, td{
+ text-align: center;
+}
