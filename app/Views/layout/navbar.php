@@ -12,7 +12,7 @@
                     <a class="nav-link" aria-current="page" href="/">Home</a>
                     <a class="nav-link" href="/pages/about">About</a>
                     <a class="nav-link" href="/pages/contact">Contact</a>
-                    <a class="nav-link" href="/movie">Movie</a>
+                    <a class="nav-link" href="/movies">Movies</a>
                     
                 </div>
             </div>

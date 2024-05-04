@@ -11,15 +11,18 @@
                         <th class="cover" scope="col">Cover</th>
                         <th scope="col">Nama</th>
                         <th scope="col">Aksi</th>
-                    </tr>
+                    </tr>   
                 </thead>
                 <tbody>
+                    <?php $x = 1;?>
+                    <?php foreach ($film as $f) :?>
                     <tr>
-                        <th scope="row">1</th>
-                        <td><img src="/image/honda accord.jpg" class="sampul" width="200" alt=""></td>
-                        <td>SuperCar</td>
-                        <td><button type="button" class="btn btn-success">detail</button></td>
+                        <th scope="row"><?= $x++;?></th>
+                        <td><img src="/image/<?= $f['sampul']?>" class="sampul" width="200" alt=""></td>
+                        <td><?= $f['judul']?></td>
+                        <td><a class="btn btn-success" href="/movies/<?= $f['slug']?>">detail</a></td>
                     </tr>
+                    <?php endforeach;?>
                 </tbody>
             </table>
             <style>
