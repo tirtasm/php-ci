@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 class Pages extends BaseController
 {
-    public function index(): string
+    public function index()
     {
         $data = [
             'title' => 'Home | Nama Website'
@@ -20,9 +20,6 @@ class Pages extends BaseController
         ];
         
         return view('pages/about', $data);
-        
-        
-        
     }
     public function contact()
     {

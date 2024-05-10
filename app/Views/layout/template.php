@@ -6,6 +6,25 @@
 
 <?= $this->renderSection('content');?>
 
+<script>
+    function previewImg() {
+
+
+        const cover = document.querySelector('#cover');
+        const coverLabel = document.querySelector('.labelCover');
+        const imgPreview = document.querySelector('.img-preview');
+    
+        coverLabel.textContent = cover.files[0].name;
+    
+        const fileCover = new FileReader();
+        fileCover.readAsDataURL(cover.files[0]);
+    
+        fileCover.onload = function(e) {
+            imgPreview.src = e.target.result;
+        }   
+    }
+
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
